@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    background: rgb(177, 204, 224);
+}
+
+.MainParent{
+    margin: 5px;
+    height: 92vh;
+    width: 92vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.GameBox{
+    margin: 5px;
+    border: 2px solid black;
+    height: 250px;
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.GameBox > div{
+    border: 2px solid black;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Box:hover{
+    background: rgb(174, 174, 222);
+}
